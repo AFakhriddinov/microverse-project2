@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>hello world</h1>
-    <h2>Hello programmers</h2>
-    <h3>HEllo, we're software developers</h3>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Enter your name</label>
+      <input required placeholder="Enter your name" type="text" id="name"/>
+        
+      <label id="email-label">Enter your email</label>
+      <input placeholder="Enter your email" required type="email" id="email"/>
+
+      <label id="number-label">Enter your age</label>
+      <input placeholder="Enter your age" type="number" id="number" min="10"  max="20"/>
+      
+      <select id="dropdown">
+        <option>1</option>
+        <option>2</option>
+      </select> 
+
+      <input value="male" type="radio" name="gender" id="male" />
+      <label for="male">Male</label><br>
+
+      <input value="female" type="radio" name="gender" id="female" />
+      <label for="female">Female</label><br>
+
+      
+
+      <input type="checkbox" id="person1" name="person1" value="Tom">
+      <label for="person1"> This is Tome</label><br>
+      <input type="checkbox" id="person2" name="person2" value="Bob">
+      <label for="person2"> This is Bob</label><br>
+      <input type="checkbox" id="person3" name="person3" value="George">
+      <label for="person3"> This is George</label><br><br>
+
+      <textarea></textarea>
+
+       <button type="submit" id="submit">Submit</button>
+    </form>
     
 </body>
 </html>
